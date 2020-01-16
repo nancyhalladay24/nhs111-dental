@@ -1,0 +1,60 @@
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  Content page example - NHS.UK prototype kit
+{% endblock %}
+
+<!-- Breadcrumb goes inside the beforeContent block -->
+<!-- More info and code for the breadcrumb can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/breadcrumbs -->
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+<!-- Your page content goes inside the content block -->
+<!-- More info and code for the page layout can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/layout -->
+{% block content %}
+
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+        Local image uploading for prototypes
+      </h1>
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://beta.nhs.uk/service-manual/styles-components-patterns -->
+      
+      <form enctype="multipart/form-data">
+        <div class="nhsuk-form-group" id="image-upload-form-group">
+          <label class="nhsuk-label" for="image-upload-input">Upload an image</label>
+          <span class="nhsuk-error-message" id="image-upload-error">
+            <span class="nhsuk-u-visually-hidden">Error:</span> The image is too large for local storage
+          </span>
+          <input type="file" class="nhsuk-input nhsuk-file-input" id="image-upload-input" accept="image/*" />
+          <figure class="nhsuk-image" id="image-upload-figure">
+            <img class="nhsuk-image__img" id="image-upload-image" src="" alt="Uploaded image">
+            <figcaption class="nhsuk-image__caption">
+              Uploaded image
+            </figcaption>
+          </figure>
+        </div>
+      </form>
+
+      <!-- End of content -->
+
+    </div>  
+
+  </div>
+{% endblock %}
