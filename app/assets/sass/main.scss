@@ -6,35 +6,28 @@
 @import 'components/phase-banner';
 @import 'components/related-nav';
 @import 'components/tag';
-
+.nhsuk-header {
+  background:white;
+  border-bottom: 2px solid #005EB8;
+}
+.nhsuk-header__service-name {
+  color:black;
+}
+body {
+  background:white;
+}
 hr {
 padding:0px;
 margin-top:12px;
 margin-bottom:30px;
   width:122px;
 }
-.nhsuk-header {
-  background:white;
-  border-bottom: 2px solid #005EB8;
-}
-.nhsuk-header  {
-  color:black;
-}
-body {
-  background:white;
-}
-.nhsuk-footer {
-  background: #005EB8;
-}
-.nhsuk-footer ul li {
-  color:white;
-}
 .call-to-action {
 Padding-bottom: 10px;
   border-bottom:3px solid #005EB8;
 }
 .find-a-dentist-text {
-  padding-top: 0px;
+  padding-top: 30px;
   padding-bottom: 150px;
 }
 .nhsuk-details__text p {
@@ -43,6 +36,17 @@ Padding-bottom: 10px;
 .band-text p {
   font-weight: bold;
 }
+.nhsuk-footer {
+  background: #005EB8;
+  border-top: 4px solid #003970;
+}
+a.nhsuk-footer__list-item-link {
+  color:white !important;
+}
+.nhsuk-footer__copyright {
+  color:white;
+}
+
 ///////////////////////////////////////////
 // Add your custom CSS/Sass styles below...
 ///////////////////////////////////////////
