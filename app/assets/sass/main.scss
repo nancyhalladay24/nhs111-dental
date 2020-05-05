@@ -7,6 +7,42 @@
 @import 'components/related-nav';
 @import 'components/tag';
 
+hr {
+padding:0px;
+margin-top:12px;
+margin-bottom:30px;
+  width:122px;
+}
+.nhsuk-header {
+  background:white;
+  border-bottom: 2px solid #005EB8;
+}
+.nhsuk-header  {
+  color:black;
+}
+body {
+  background:white;
+}
+.nhsuk-footer {
+  background: #005EB8;
+}
+.nhsuk-footer ul li {
+  color:white;
+}
+.call-to-action {
+Padding-bottom: 10px;
+  border-bottom:3px solid #005EB8;
+}
+.find-a-dentist-text {
+  padding-top: 0px;
+  padding-bottom: 150px;
+}
+.nhsuk-details__text p {
+  margin-bottom:10px;
+}
+.band-text p {
+  font-weight: bold;
+}
 ///////////////////////////////////////////
-// Add your custom CSS/Sass styles below... 
+// Add your custom CSS/Sass styles below...
 ///////////////////////////////////////////

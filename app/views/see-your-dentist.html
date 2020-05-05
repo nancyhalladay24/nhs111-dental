@@ -1,0 +1,137 @@
+<!--
+  This is the main layout where you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Extends the layout from /docs/views/template.html -->
+{% extends "template.html" %}
+
+<!-- Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+{% endblock %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  111 online see your dentist now
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+  {{ header({
+    "service": {
+        "name": "111 online",
+        "href": "/"
+      },
+      "showNav": "false",
+      "showSearch": "false"
+    })
+  }}
+{% endblock %}
+{% block content %}
+<body>
+  <div class="call-to-action">
+<h2>
+  See your dentist now
+  </h2>
+  </div>
+  <div class="top-hr">
+  <hr margin-top:"10px";>
+  </div>
+  <div class="find-a-dentist-text"
+  <p>
+    Check which services can help if you do not have a regular dentist or they are shut.
+    </p>
+    <a class="nhsuk-action-link__link" href="index">
+   <svg class="nhsuk-icon nhsuk-icon__arrow-right-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+     <path d="M0 0h24v24H0z" fill="none"></path>
+     <path d="M12 2a10 10 0 0 0-9.95 9h11.64L9.74 7.05a1 1 0 0 1 1.41-1.41l5.66 5.65a1 1 0 0 1 0 1.42l-5.66 5.65a1 1 0 0 1-1.41 0 1 1 0 0 1 0-1.41L13.69 13H2.05A10 10 0 1 0 12 2z"></path>
+   </svg>
+   <span class="nhsuk-action-link__text">Find a dentist</span>
+ </a>
+    </div>
+      <hr class="bottom-hr">
+    <div class="FAQ">
+      <details class="nhsuk-details">
+  <summary class="nhsuk-details__summary">
+    <span class="nhsuk-details__summary-text">
+      Things to look out for and self-care
+    </span>
+  </summary>
+  <div class="nhsuk-details__text">
+    <h4>Tooth extraction</h4>
+    <ul>
+      <li>If the tooth socket is bleeding:</li>
+      <ul>
+        <li> Don't try to poke anything into the hole.
+          <li> Fold a piece or clean,damp gauze or cotton cloth, like a handkerchief, into a pad and put it directly across the space where the toth was.
+          </ul>
+    </ul>
+  </div>
+</details>
+
+<details class="nhsuk-details">
+<summary class="nhsuk-details__summary">
+<span class="nhsuk-details__summary-text">
+What to do if you start to feel worse
+</span>
+</summary>
+<div class="nhsuk-details__text">
+<ol>
+  <li> call 111 </li>
+  <li> Tell them 111 online said you needed to get help now. </li>
+  <li> Tell them your symptoms have got worse and you need to speak to a nurse. </li>
+</ul>
+</div>
+</details>
+
+<details class="nhsuk-details">
+<summary class="nhsuk-details__summary">
+<span class="nhsuk-details__summary-text">
+Cost of NHS dental treatment
+</span>
+</summary>
+<div class="nhsuk-details__text">
+<p>NHS pricing bands are:<p>
+  <div class="band-text">
+    <p> Band 1 (including emergency) <br> Band 2 <br> Band 3 </p>
+    </div>
+    <p> Prices change every April </p>
+    <br>
+    <p> Information from NHS.uk about: </p>
+    <ul>
+      <a href="index"><li> What is covered in each band </li></a>
+      <a href="index"><li> Getting help with dental costs </li></a>
+      </ul>
+</div>
+</details>
+      </div>
+  </body>
+  {% endblock %}
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+  {{ footer({
+    "links": [
+      {
+        "URL": "/",
+        "label": "Home"
+      },
+      {
+        "URL": "/page-example",
+        "label": "Example page"
+      }
+    ]
+  })}}
+{% endblock %}
+
+{% block bodyEnd %}
+  {% block scripts %}
+    <!-- Custom JavaScript files can be added to this file -->
+    {% include "includes/scripts.html" %}
+    <!-- For adding page specific JavsScript -->
+    {% block pageScripts %}{% endblock %}
+  {% endblock %}
+{% endblock %}
