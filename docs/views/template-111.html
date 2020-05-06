@@ -83,10 +83,16 @@
           text: 'Skip to main content'
         }) }}
       {% endblock %}
+<header class="nhsuk-header" role="banner">
+  <div class="header-content">
+    <div class="nhsuk-width-container {{ containerClasses }}">
+  <a class="nhsuk-logo-index" href="index"><img src="images/nhs-logo.png" alt="NHS logo"></a>
+  <p>111 online</p>
+  </div>
+  </div>
+  </header>
 
-      {% block header %}
-        {{ header({}) }}
-      {% endblock %}
+
 
       {% block beforeContent %}{% endblock %}
 

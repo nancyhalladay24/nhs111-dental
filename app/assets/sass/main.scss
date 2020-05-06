@@ -6,12 +6,23 @@
 @import 'components/phase-banner';
 @import 'components/related-nav';
 @import 'components/tag';
-.nhsuk-header {
-  background:white;
+header .header-content {
+  padding-top:20px;
+  padding-bottom:5px;
   border-bottom: 2px solid #005EB8;
+  background: white;
 }
-.nhsuk-header__service-name {
-  color:black;
+header img {
+  width:79px;
+  height:32px;
+  float:left;
+  vertical-align: middle;
+}
+header p {
+padding-top: 2px;
+  padding-left:90px;
+  box-sizing: border-box;
+  vertical-align: inherit;
 }
 body {
   background:white;
