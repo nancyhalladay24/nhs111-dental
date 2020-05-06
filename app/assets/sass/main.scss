@@ -29,9 +29,9 @@ body {
 }
 hr {
 padding:0px;
-margin-top:12px;
+margin-top:30px;
 margin-bottom:30px;
-  width:122px;
+  width:125px;
 }
 .call-to-action {
 Padding-bottom: 10px;
@@ -39,13 +39,22 @@ Padding-bottom: 10px;
 }
 .find-a-dentist-text {
   padding-top: 30px;
-  padding-bottom: 150px;
+  padding-bottom: 50px;
 }
 .nhsuk-details__text p {
   margin-bottom:10px;
 }
+div.nhsuk-details__text {
+  max-width: 450px;
+}
 .band-text p {
   font-weight: bold;
+  text-align: left;
+}
+.band-text span {
+  font-weight: bold;
+  float:right;
+  display:inline-block;
 }
 .nhsuk-footer {
   background: #005EB8;
