@@ -6,6 +6,12 @@
 @import 'components/phase-banner';
 @import 'components/related-nav';
 @import 'components/tag';
+.nhsuk-button {
+  width:300px;
+}
+div.before-you-continue-advice {
+  max-width:700px;
+}
 header .header-content {
   padding-top:20px;
   padding-bottom:5px;
@@ -44,7 +50,7 @@ Padding-bottom: 10px;
 .nhsuk-details__text p {
   margin-bottom:10px;
 }
-div.nhsuk-details__text {
+div.band-text {
   max-width: 450px;
 }
 .band-text p {
@@ -66,6 +72,34 @@ a.nhsuk-footer__list-item-link {
 .nhsuk-footer__copyright {
   color:white;
 }
+.dos-display {
+  position:relative;
+  border-left:4px solid #D8DDE0;
+  background:#F0F4F5;
+  padding: 15px 0px 15px 15px;
+  margin-bottom:20px;
+}
+img.map-view {
+  position:absolute;
+  top:0px;
+  right:0px;
+  float:right;
+  width:400px;
+  height:518px;
+  border-left:3px solid white;
+}
+.number{
+  color:#005EB8;
+  font-weight: bold;
+}
+.opening-time{
+  color:#005EB8;
+  text-decoration: underline;
+}
+.opening-time svg {
+  margin-left:5px;
+}
+
 
 ///////////////////////////////////////////
 // Add your custom CSS/Sass styles below...
