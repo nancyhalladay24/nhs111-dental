@@ -39,6 +39,12 @@ margin-top:30px;
 margin-bottom:30px;
   width:125px;
 }
+.dos-display hr {
+  padding:0px;
+  margin-top:15px;
+  margin-bottom:15px;
+    width:125px;
+}
 .call-to-action {
 Padding-bottom: 10px;
   border-bottom:3px solid #005EB8;
@@ -76,17 +82,17 @@ a.nhsuk-footer__list-item-link {
   position:relative;
   border-left:4px solid #D8DDE0;
   background:#F0F4F5;
-  padding: 15px 0px 15px 15px;
-  margin-bottom:20px;
+  padding: 15px 0px 1px 15px;
+  margin-bottom:25px;
 }
-img.map-view {
+iframe {
   position:absolute;
   top:0px;
   right:0px;
   float:right;
-  width:400px;
-  height:518px;
-  border-left:3px solid white;
+  width:500px;
+  height:467px;
+  border-left:5px solid white;
 }
 .number{
   color:#005EB8;
@@ -97,10 +103,25 @@ img.map-view {
   text-decoration: underline;
 }
 .opening-time svg {
-  margin-left:5px;
+  margin-right:7.5px;
 }
-
-
+.more-information {
+  text-decoration: underline;
+  color:#005EB8;
+}
+.address::first-line {
+  font-weight: bold;
+}
+.call-only-number {
+  color:#005EB8;
+  font-weight: bold;
+}
+.opening-time-24{
+  color:#005EB8;
+}
+a.back-button {
+  color:#768692;
+}
 ///////////////////////////////////////////
 // Add your custom CSS/Sass styles below...
 ///////////////////////////////////////////
