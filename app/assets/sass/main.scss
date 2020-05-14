@@ -6,11 +6,9 @@
 @import 'components/phase-banner';
 @import 'components/related-nav';
 @import 'components/tag';
-.nhsuk-button {
-  width:300px;
-}
-div.before-you-continue-advice {
-  max-width:700px;
+/*Layout CSS*/
+a.back-button {
+  color:#768692;
 }
 header .header-content {
   padding-top:20px;
@@ -30,6 +28,9 @@ padding-top: 2px;
   box-sizing: border-box;
   vertical-align: inherit;
 }
+div.before-you-continue-advice {
+  max-width:600px;
+}
 body {
   background:white;
 }
@@ -37,14 +38,10 @@ hr {
 padding:0px;
 margin-top:30px;
 margin-bottom:30px;
-  width:125px;
+width:125px;
 }
-.dos-display hr {
-  padding:0px;
-  margin-top:15px;
-  margin-bottom:15px;
-    width:125px;
-}
+
+/*action*/
 .call-to-action {
 Padding-bottom: 10px;
   border-bottom:3px solid #005EB8;
@@ -53,6 +50,98 @@ Padding-bottom: 10px;
   padding-top: 30px;
   padding-bottom: 50px;
 }
+
+/*DoS display*/
+.address::first-line {
+  font-weight: bold;
+}
+.boilerplate{
+  line-height: 42px;
+}
+.number{
+  color:#005EB8;
+}
+.more-information {
+  text-decoration: underline;
+  color:#005EB8;
+}
+.website {
+  line-height: 42px;
+}
+.dos-display hr {
+  padding:0px;
+  margin-top:0px;
+  margin-bottom:10px;
+  width:125px;
+}
+.dos-display {
+  position:relative;
+  border-left:4px solid #D8DDE0;
+  background:#F0F4F5;
+  margin-bottom:25px;
+  display:flex;
+  flex-direction:row;
+}
+.dosInformation{
+  padding: 15px 0px 1px 15px;
+  display:flex;
+  flex-direction:column;
+  flex-basis:42%;
+}
+.mapView{
+  display:flex;
+  flex-direction:column;
+  flex-basis:58%;
+}
+iframe {
+  width:100%;
+  height:100%;
+}
+/*Opening time content*/
+.nhsuk-expander{
+  background-color:#F0F4F5 !important;
+  margin-bottom:15px;
+}
+.opening-times .nhsuk-details__summary {
+  background-color: #F0F4F5 !important;
+  max-width:500px;
+  padding:0px !important;
+}
+.openingTimeRow{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  align-content: center;
+  margin: 10px 10px 0px 10px;
+  padding: 10px 0px 0px 0px;
+  border-bottom:solid 1px #D8DDE0;
+}
+.openingTimeRow>p{
+  margin:0px 0px 8px 0px;
+}
+.openingDay{
+flex-basis:60%;
+}
+.openingDayMF{
+  flex-basis:54%;
+}
+.opening-time-24{
+  color:#005EB8;
+}
+/*.opening-time{
+  color:#005EB8;
+  text-decoration: underline;
+}
+.opening-time svg {
+  margin-right:7.5px;
+}*/
+
+/*Navigation buttons*/
+.nhsuk-button {
+  width:300px;
+}
+
+/*FAQ*/
 .nhsuk-details__text p {
   margin-bottom:10px;
 }
@@ -68,6 +157,8 @@ div.band-text {
   float:right;
   display:inline-block;
 }
+
+/*Footer CSS*/
 .nhsuk-footer {
   background: #005EB8;
   border-top: 4px solid #003970;
@@ -78,50 +169,17 @@ a.nhsuk-footer__list-item-link {
 .nhsuk-footer__copyright {
   color:white;
 }
-.dos-display {
-  position:relative;
-  border-left:4px solid #D8DDE0;
-  background:#F0F4F5;
-  padding: 15px 0px 1px 15px;
-  margin-bottom:25px;
+
+/*media queries*/
+@media screen and (max-width:600px){
+.dos-display{
+  flex-direction:column;
 }
-iframe {
-  position:absolute;
-  top:0px;
-  right:0px;
-  float:right;
-  width:500px;
-  height:467px;
-  border-left:5px solid white;
+iframe{
+  height:300px;
 }
-.number{
-  color:#005EB8;
-  font-weight: bold;
 }
-.opening-time{
-  color:#005EB8;
-  text-decoration: underline;
-}
-.opening-time svg {
-  margin-right:7.5px;
-}
-.more-information {
-  text-decoration: underline;
-  color:#005EB8;
-}
-.address::first-line {
-  font-weight: bold;
-}
-.call-only-number {
-  color:#005EB8;
-  font-weight: bold;
-}
-.opening-time-24{
-  color:#005EB8;
-}
-a.back-button {
-  color:#768692;
-}
+
 ///////////////////////////////////////////
 // Add your custom CSS/Sass styles below...
 ///////////////////////////////////////////
