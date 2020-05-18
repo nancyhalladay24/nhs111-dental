@@ -127,17 +127,26 @@ iframe {
   margin: 10px 25px 0px 10px;
   padding: 10px 5px 0px 5px;
   border-bottom:solid 1px #D8DDE0;
-  max-width:450px;
 }
 .openingTimeRow>p{
   margin:0px 0px 8px 0px;
 }
 .openingDay{
-flex-basis:40%;
+flex-basis:65%;
+}
+.openingDayMF{
+  flex-basis:54%;
 }
 .opening-time-24{
   color:#005EB8;
 }
+/*.opening-time{
+  color:#005EB8;
+  text-decoration: underline;
+}
+.opening-time svg {
+  margin-right:7.5px;
+}*/
 
 /*Navigation buttons*/
 .nhsuk-button {

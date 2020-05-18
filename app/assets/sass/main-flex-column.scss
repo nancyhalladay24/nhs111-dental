@@ -76,34 +76,34 @@ border:1px solid #D8DDE0;
   margin-bottom:10px;
   width:125px;
 }
-
 .dos-display {
   border-left:4px solid #D8DDE0;
   background:#F0F4F5;
   display:flex;
-  flex-direction:row;
-  flex-wrap:wrap;
+  flex-direction:column;
   justify-content: flex-start;
+  flex-wrap:wrap;
   margin-bottom:25px;
+  height:510px;
+  overflow-y:scroll;
 }
 .dosInformation{
   padding: 15px 0px 1px 15px;
   display:flex;
   flex-direction:column;
-  flex-basis:45%;
+  width:45%;
 }
-/*only needed for seperation
 .extraInfo{
   padding: 15px 0px 1px 15px;
   display:flex;
   flex-direction:column;
-  flex-basis:45%;
+  width:45%;
 }
-*/
 .mapView{
   display:flex;
   flex-direction:column;
-  flex-basis:55%;
+  width:55%;
+  flex-grow: 2;
   border-left: solid white 4px;
 }
 iframe {
@@ -120,6 +120,9 @@ iframe {
   max-width:450px;
   padding:0px !important;
 }
+.openingTable{
+  height:inherit;
+}
 .openingTimeRow{
   display:flex;
   flex-direction:row;
@@ -127,13 +130,12 @@ iframe {
   margin: 10px 25px 0px 10px;
   padding: 10px 5px 0px 5px;
   border-bottom:solid 1px #D8DDE0;
-  max-width:450px;
 }
 .openingTimeRow>p{
   margin:0px 0px 8px 0px;
 }
 .openingDay{
-flex-basis:40%;
+min-width:65%;
 }
 .opening-time-24{
   color:#005EB8;
@@ -176,7 +178,7 @@ a.nhsuk-footer__list-item-link {
 /*media queries*/
 @media screen and (max-width:600px){
 .dos-display{
-  flex-direction:column;
+  height:auto;
 }
 .dosInformation{
   flex-direction:column;
