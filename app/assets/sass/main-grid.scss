@@ -105,6 +105,27 @@ border:1px solid #D8DDE0;
   grid-area:map;
   margin: 0 0 0 5px;
 }
+.moreInformationGrid{
+  padding: 15px 0px 1px 15px;
+  display:grid;
+  grid-template-columns: [information] auto [map] auto [mapEnd];
+  grid-template-rows: auto;
+  grid-template-areas:
+  "information3 mapOther";
+}
+.mapOther {
+  display:inline-grid;
+  grid-area: mapOther;
+  grid-column-start: 2 / 3;
+  margin-left:20px;
+}
+.address2{
+  margin: 15px;
+  padding:20px;
+  display:inline-grid;
+  grid-area: information3;
+  grid-column-start: 1/2;
+}
 
 .dosDisplayGrid hr {
   padding:0px;
@@ -116,6 +137,7 @@ iframe {
   width:100%;
   height:100%;
 }
+
 .dos-display {
   border-left:4px solid #D8DDE0;
   background:#F0F4F5;
@@ -136,7 +158,6 @@ iframe {
 }
 .opening-times .nhsuk-details__summary {
   background-color: #F0F4F5 !important;
-  max-width:450px;
   padding:0px !important;
 }
 .openingTimeRow{
@@ -151,7 +172,7 @@ iframe {
   margin:0px 0px 8px 0px;
 }
 .openingDay{
-flex-basis:60%;
+flex-basis:50%;
 }
 .openingDayMF{
   flex-basis:54%;
@@ -210,6 +231,27 @@ a.nhsuk-footer__list-item-link {
 
   iframe{
     height:300px;
+  }
+  .moreInformationGrid{
+    padding: 15px 0px 1px 15px;
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "mapOther"
+    "information3";
+  }
+  .mapOther {
+    grid-row: 1 / 2;
+    margin-left:0px;
+    margin-bottom:15px;
+  }
+  .address2{
+    margin: 15px;
+    padding:20px;
+    display:inline-grid;
+    grid-area: information3;
+    grid-row-start: 2 / 3;
   }
 }
 ///////////////////////////////////////////
