@@ -45,8 +45,11 @@ border:1px solid #D8DDE0;
 
 /*action*/
 .call-to-action {
-  padding-bottom: 10px;
-  border-bottom:3px solid #005EB8;
+  padding: 25px 0px 10px 20px;
+  border-bottom:5px solid #005EB8;
+  border-left:5px solid #005EB8;
+  border-right:5px solid #005EB8;
+  border-top:5px solid #005EB8;
 }
 .find-a-dentist-text {
   padding-top: 30px;
@@ -223,10 +226,21 @@ div.band-text {
   font-weight: bold;
   text-align: left;
 }
+.band-text small {
+  font-weight:normal;
+  text-align: left;
+}
 .band-text span {
   font-weight: bold;
   float:right;
   display:inline-block;
+}
+.band-text hr {
+  padding:0px;
+  margin-top:5px;
+  margin-bottom:10px;
+  width:auto;
+  border: solid #D8DDE0 1px;
 }
 
 /*Footer CSS*/
