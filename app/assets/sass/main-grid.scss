@@ -90,6 +90,12 @@ border:1px solid #D8DDE0;
   grid-column-start: 1;
   grid-area: information1;
 }
+.extraInformation hr {
+  padding:0px;
+  margin-top:5px;
+  margin-bottom:15px;
+  width:125px;
+}
 .extraInformation{
   border-left:4px solid #D8DDE0;
   background:#F0F4F5;
@@ -108,7 +114,7 @@ border:1px solid #D8DDE0;
 .moreInformationGrid{
   padding: 15px 0px 1px 15px;
   display:grid;
-  grid-template-columns: [information] auto [map] auto [mapEnd];
+  grid-template-columns: [information] 40% [map] 60% [mapEnd];
   grid-template-rows: auto;
   grid-template-areas:
   "information3 mapOther";
@@ -117,20 +123,21 @@ border:1px solid #D8DDE0;
   display:inline-grid;
   grid-area: mapOther;
   grid-column-start: 2 / 3;
-  margin-left:20px;
+  margin-right:15px;
+  height:300px;
 }
 .address2{
   margin: 15px;
-  padding:20px;
+  padding:15px;
   display:inline-grid;
   grid-area: information3;
   grid-column-start: 1/2;
 }
 
-.dosDisplayGrid hr {
+.dosInformation .moreInformationGrid hr {
   padding:0px;
-  margin-top:0px;
-  margin-bottom:10px;
+  margin-top:30px;
+  margin-bottom:17.5px;
   width:125px;
 }
 iframe {
@@ -149,18 +156,28 @@ iframe {
 .dosInformation{
   padding: 15px 0px 1px 15px;
   display:flex;
+  width:100%;
   flex-direction:column;
 }
+.dosInformation hr {
+  padding:0px;
+  margin-top:15px;
+  margin-bottom:17.5px;
+  width:125px;
+}
+
 /*Opening time content*/
 .nhsuk-expander{
   background-color:#F0F4F5 !important;
-  margin-bottom:15px;
+  margin-bottom:10px;
+  width:60%;
 }
 .opening-times .nhsuk-details__summary {
   background-color: #F0F4F5 !important;
   padding:0px !important;
 }
 .openingTimeRow{
+  width:330px;
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
@@ -172,10 +189,19 @@ iframe {
   margin:0px 0px 8px 0px;
 }
 .openingDay{
-flex-basis:50%;
+flex-basis:58%;
 }
 .openingDayMF{
-  flex-basis:54%;
+  flex-basis:58%;
+}
+.openingTimeRowMF{
+  width:400px;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  margin: 10px 25px 0px 10px;
+  padding: 10px 5px 0px 5px;
+  border-bottom:solid 1px #D8DDE0;
 }
 .opening-time-24{
   color:#005EB8;
@@ -215,7 +241,7 @@ a.nhsuk-footer__list-item-link {
   color:white;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:700px) {
   .dosDisplayGrid{
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
@@ -252,6 +278,9 @@ a.nhsuk-footer__list-item-link {
     display:inline-grid;
     grid-area: information3;
     grid-row-start: 2 / 3;
+  }
+  .openingTimeRowMF{
+    width:330px;
   }
 }
 ///////////////////////////////////////////
