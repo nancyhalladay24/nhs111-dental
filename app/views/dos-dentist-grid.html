@@ -33,7 +33,7 @@
 {% block content %}
 <body>
   <div class="services-that-can-help">
-    <a class="back-button" href="see-your-dentist-now"> Back </a>
+    <a class="back-button" href="see-your-dentist-now-reworked"> Back </a>
     <h2>
       Services that can help
     </h2>
@@ -136,6 +136,28 @@
       <div>
         <h3>More ways to get help</h3>
         <p>If you do not want to use the recommended service, see <a href="other-services">other things you can do.</a>
+          <details class="nhsuk-details">
+            <summary class="nhsuk-details__summary">
+              <span class="nhsuk-details__summary-text">
+                Cost of NHS dental treatment
+              </span>
+            </summary>
+            <div class="nhsuk-details__text">
+              <p>NHS pricing bands are:<p>
+                <div class="band-text">
+                  <p> Band 1 (including emergency) <span> £22.70 </span><br>
+                  <small>Examination, diagnosis and advice.</small></p>
+                  <hr>
+                  <p> Band 2 <span> £62.10 </span><br>
+                  <small> Additional minor treatment such as fillings, <br> root canal and removing teeth.</small></p>
+                  <hr>
+                  <p>Band 3 <span> £269.30 </span><br>
+                  <small> Additional complex procedures, such as<br>crowns, dentures and bridges.</small></p>
+                  <hr>
+                </div>
+                <p> Prices change every April </p>
+              </div>
+            </details>
         </div>
         <br>
         <hr>
@@ -176,30 +198,6 @@
               </ol>
             </div>
           </details>
-          <hr>
-          <details class="nhsuk-details">
-            <summary class="nhsuk-details__summary">
-              <span class="nhsuk-details__summary-text">
-                Cost of NHS dental treatment
-              </span>
-            </summary>
-            <div class="nhsuk-details__text">
-              <p>NHS pricing bands are:<p>
-                <div class="band-text">
-                  <p> Band 1 (including emergency) <span> £22.70 </span>
-                    <br> Band 2 <span> £62.10 </span>
-                    <br> Band 3 <span> £269.30 </span>
-                  </p>
-                </div>
-                <p> Prices change every April </p>
-                <br>
-                <p> Information from NHS.uk about: </p>
-                <ul>
-                  <a href="https://www.nhs.uk/common-health-questions/dental-health/how-much-will-i-pay-for-nhs-dental-treatment/"><li> What is covered in each band </li></a>
-                  <a href="https://www.nhs.uk/using-the-nhs/help-with-health-costs/get-help-with-dental-costs/"><li> Getting help with dental costs </li></a>
-                </ul>
-              </div>
-            </details>
           </div>
       </body>
   {% endblock %}

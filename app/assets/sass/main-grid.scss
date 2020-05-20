@@ -44,6 +44,12 @@ border:1px solid #D8DDE0;
 }
 
 /*action*/
+.timeframeBanner{
+  font-weight: bold;
+  background-color: #FDF4DD;
+  padding:20px 20px 5px 20px;
+  margin-bottom:20px;
+}
 .call-to-action {
   padding: 25px 0px 10px 20px;
   border-bottom:5px solid #005EB8;
@@ -57,6 +63,11 @@ border:1px solid #D8DDE0;
 }
 
 /*DoS display*/
+
+.dosDisplayGrid .nhsuk-details .summary-text span{
+  font-weight: bold;
+  color: black !important;
+}
 .address::first-line {
   font-weight: bold;
 }
@@ -72,6 +83,9 @@ border:1px solid #D8DDE0;
 }
 .website {
   line-height: 42px;
+}
+.aliasAddress {
+  font-weight: bold;
 }
 
 /* grid layout */
@@ -170,17 +184,20 @@ iframe {
 }
 
 /*Opening time content*/
+.opening-times{
+  width:100%;
+}
 .nhsuk-expander{
   background-color:#F0F4F5 !important;
   margin-bottom:10px;
-  width:60%;
+  width:inherit;
 }
 .opening-times .nhsuk-details__summary {
   background-color: #F0F4F5 !important;
   padding:0px !important;
+  width:inherit;
 }
 .openingTimeRow{
-  width:330px;
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
@@ -192,13 +209,19 @@ iframe {
   margin:0px 0px 8px 0px;
 }
 .openingDay{
-flex-basis:58%;
+flex-basis:55%;
 }
 .openingDayMF{
-  flex-basis:58%;
+  flex-basis:55%;
+}
+.opening-timesOS{
+  width:75%;
+}
+.opening-timesOS .nhsuk-details__summary {
+  background-color: #F0F4F5 !important;
+  padding:0px !important;
 }
 .openingTimeRowMF{
-  width:400px;
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
@@ -240,7 +263,7 @@ div.band-text {
   margin-top:5px;
   margin-bottom:10px;
   width:auto;
-  border: solid #D8DDE0 1px;
+  border: solid #D8DDE0 0.5px;
 }
 
 /*Footer CSS*/
@@ -293,10 +316,25 @@ a.nhsuk-footer__list-item-link {
     grid-area: information3;
     grid-row-start: 2 / 3;
   }
-  .openingTimeRowMF{
-    width:330px;
+  .opening-timesOS{
+    width:100%;
+    font-size:14pt;
+  }
+  .openingDayMF{
+    flex-basis:51%;
+  }
+  .dosInformation .moreInformationGrid hr {
+    margin-top:22px;
+    margin-bottom:8px;
   }
 }
+
+@media screen and (max-width:360px) {
+  .openingDayMF{
+    flex-basis:48%;
+  }
+}
+
 ///////////////////////////////////////////
 // Add your custom CSS/Sass styles below...
 ///////////////////////////////////////////
