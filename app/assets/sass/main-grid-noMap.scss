@@ -104,98 +104,28 @@ border:1px solid #D8DDE0;
 /* grid layout */
 .dosDisplayGrid{
   margin-bottom:25px;
-  display:grid;
+  width:100%;
+  /*display:grid;
   grid-template-columns: 40% 60%;
   grid-template-rows: auto auto;
   grid-template-areas:
   "information1 map"
-  "information2 map";
+  "information2 map";*/
 }
 
 .dosInformationGrid{
   border-left:4px solid #D8DDE0;
   background:#F0F4F5;
   padding: 15px 0px 1px 15px;
-  display:inline-grid;
-  grid-column-start: 1;
-  grid-area: information1;
 }
-.extraInformation hr {
+.addressNoMap hr{
   padding:0px;
-  margin-top:5px;
-  margin-bottom:15px;
+  margin-top:20px;
+  margin-bottom:20px;
   width:125px;
-}
-.extraInformation{
-  border-left:4px solid #D8DDE0;
-  background:#F0F4F5;
-  padding: 15px 0px 1px 15px;
-  display:inline-grid;
-  grid-column-start: 1;
-  grid-area: information2;
-}
-.mapViewGrid{
-  display:inline-grid;
-  grid-column-start: 2;
-  grid-row:1 / 3;
-  grid-area:map;
-  margin: 0 0 0 5px;
-  background-color: #F0F4F5;
-}
-.moreInformationGrid{
-  padding: 15px 0px 1px 15px;
-  display:grid;
-  grid-template-columns: [information] 40% [map] 60% [mapEnd];
-  grid-template-rows: auto;
-  grid-template-areas:
-  "information3 mapOther";
-}
-.mapOther {
-  display:inline-grid;
-  grid-area: mapOther;
-  grid-column-start: 2 / 3;
-  margin-right:15px;
-  height:300px;
-}
-.address2{
-  margin: 15px;
-  padding:15px;
-  display:inline-grid;
-  grid-area: information3;
-  grid-column-start: 1/2;
+  border:1px solid #D8DDE0;
 }
 
-.dosInformation .moreInformationGrid hr {
-  padding:0px;
-  margin-top:30px;
-  margin-bottom:17.5px;
-  width:125px;
-}
-iframe {
-  width:100%;
-  height:100%;
-}
-
-.dos-display {
-  border-left:4px solid #D8DDE0;
-  background:#F0F4F5;
-  display:flex;
-  flex-direction:row;
-  justify-content: flex-start;
-  margin-bottom:25px;
-}
-.dosInformation{
-  padding: 15px 0px 1px 15px;
-  display:flex;
-  width:100%;
-  flex-direction:column;
-}
-.dosInformation hr {
-  padding:0px;
-  margin-top:15px;
-  margin-bottom:17.5px;
-  width:125px;
-}
 #blueBold{
   color:#005EB8;
   font-weight: bold;
@@ -225,12 +155,13 @@ iframe {
   margin: 10px 25px 0px 10px;
   padding: 10px 5px 0px 5px;
   border-bottom:solid 1px #D8DDE0;
+  width:45%;
 }
 .openingTimeRow>p{
   margin:0px 0px 8px 0px;
 }
 .openingDay{
-flex-basis:55%;
+flex-basis:65%;
 }
 .openingDayMF{
   flex-basis:55%;
@@ -348,11 +279,20 @@ a.nhsuk-footer__list-item-link {
     margin-top:22px;
     margin-bottom:8px;
   }
+  .openingDay{
+  flex-basis:63%;
+  }
+  .openingTimeRow{
+    width:auto;
+  }
 }
 
-@media screen and (max-width:360px) {
+@media screen and (max-width:375px) {
   .openingDayMF{
-    flex-basis:48%;
+    flex-basis:56%;
+  }
+  .openingDay{
+  flex-basis:56%;
   }
 }
 

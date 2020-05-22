@@ -1,0 +1,87 @@
+<!--
+  This is the main layout where you can:
+    - change the header and footer
+    - add custom CSS and JavaScript
+-->
+
+<!-- Extends the layout from /docs/views/template.html -->
+{% extends "template-111.html" %}
+
+<!-- Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+{% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">
+{% endblock %}
+
+<!-- Set the page title inside the pageTitle block -->
+{% block pageTitle %}
+  111 online see your dentist now
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+  {{ header({
+    "service": {
+        "name": "111 online",
+        "href": "/"
+      },
+      "showNav": "false",
+      "showSearch": "false"
+    })
+  }}
+{% endblock %}
+{% block content %}
+<body>
+  <div class="before-you-continue-header">
+    <h2>
+      Before you continue
+    </h2>
+  </div>
+  <hr>
+  <div class="before-you-continue-advice">
+    <p>
+      The tooth needs to be reimplanted as soon as possible.
+      <ul>
+        <li>Don’t touch the root of the tooth. Only touch the part of the tooth that is usually visible. </li>
+        <li>If it's dirty, rinse gently in milk or under running water. Don’t scrub or clean with disinfectant. </li>
+        <li>Push the root of the tooth gently back in the socket as far as it will easily go.</li>
+        <li>Hold the tooth in place by gently biting on a piece of clean, folded cloth.</li>
+      </ul>
+    </p>
+    <p>
+      If you can't or don't want to re implant the tooth, carry the tooth in a container of milk.
+      The tooth doesn't need to be cleaned before you put it in the milk.
+    </p>
+    <a href="Dx18-2hour">
+      <button class="nhsuk-button" type="submit">
+        Next
+      </button>
+    </a>
+    <br>
+  </body>
+  {% endblock %}
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+  {{ footer({
+    "links": [
+      {
+        "URL": "/",
+        "label": "Home"
+      },
+      {
+        "URL": "/page-example",
+        "label": "Example page"
+      }
+    ]
+  })}}
+{% endblock %}
+
+{% block bodyEnd %}
+  {% block scripts %}
+    <!-- Custom JavaScript files can be added to this file -->
+    {% include "includes/scripts.html" %}
+    <!-- For adding page specific JavsScript -->
+    {% block pageScripts %}{% endblock %}
+  {% endblock %}
+{% endblock %}

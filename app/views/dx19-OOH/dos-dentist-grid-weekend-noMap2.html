@@ -9,7 +9,7 @@
 
 <!-- Add your custom CSS or Sass in /app/assets/sass/main.scss -->
 {% block headCSS %}
-  <link href="/css/main-grid.css" rel="stylesheet">
+  <link href="/css/main-grid-noMap.css" rel="stylesheet">
 {% endblock %}
 
 <!-- Set the page title inside the pageTitle block -->
@@ -33,41 +33,85 @@
 {% block content %}
 <body>
   <div class="services-that-can-help">
-    <a class="back-button" href="dos-dentist-grid-emergency"> Back </a>
+    <a class="back-button" href="Dx19-6hour1"> Back </a>
     <h2>
       Services that can help
     </h2>
     <hr>
   </div>
-  <div class="timeframeBanner">
-    <p>Get urgent dental treatment within the next 4 hours.</p>
-    </div>
   <p> Recommended service for NR30 5JW <a class="postcode" href="index">change my postcode</a>
   </p>
   <div class="dosDisplayGrid">
     <div class="dosInformationGrid">
-        <p id="aliasAddress"> Emergency dentist</p>
-        <p id="boilerplate">Emergency dentists treat serious bleeding and swelling in the mouth.</p>
+        <p id="aliasAddress"> Weekend dental service <br> James Paget hospital</p>
+        <p id="boilerplate">This is a dental service available over weekends and public holidays.</p>
         <hr>
-      <p class="address">James Paget hospital<br>Lowestoft Road <br>Gorleston-on-sea<br>NR31 6LA
-      </p>
-        <h4 class="number"> 01493 452452 </h4>
-        <p id="open24">Open 24 hours</p>
+        <p>You must call to book an appointment.</p>
+        <h3 id="blueBold">Call 01493 452452 </h3>
+        <div class="opening-times">
+        <details class="nhsuk-details nhsuk-expander">
+          <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+              Open 8.30am to 5pm
+            </span>
+          </summary>
+        <div class="openingTable">
+          <div class="openingTimeRow">
+            <div class="openingDay">
+              <p>Monday to friday</p>
+            </div>
+            <div class="openingTime">
+              <p>Closed</p>
+            </div>
           </div>
-          <div class="extraInformation">
+          <div class="openingTimeRow">
+            <div class="openingDay">
+              <p>Weekends</p>
+            </div>
+            <div class="openingTime">
+              <p>8.30am to 5pm</p>
+            </div>
+          </div>
+        </div>
+      </details>
+      </div>
+      <div class="addressNoMap">
+      <hr>
+            <p>James Paget hospital<br>Lowestoft Road <br>Gorleston-on-sea<br>NR31 6LA
+            </p>
             <p class="distance"> 6 miles away <br>
               <a href="https://www.google.com/maps/dir/52.6581559,1.7280883/Dental+caister/@52.6533606,1.7158916,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x47da071d7d3e470f:0x5254c083cc029a2f!2m2!1d1.7255559!2d52.6472138" target="_blank">Get directions (opens a new tab)</a>
             </p>
-          </div>
-          <div class="mapViewGrid">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d77528.92565102657!2d1.6523996010118365!3d52.609766746294255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d52.658176!2d1.7235968!4m5!1s0x47da04f625bafd09%3A0x52eae5cc93b18803!2sjames%20paget%20hospital!3m2!1d52.5618322!2d1.7178974999999999!5e0!3m2!1sen!2suk!4v1589989203646!5m2!1sen!2suk" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
           </div>
           </div>
       <hr>
 
       <div>
         <h3>Other ways to get help</h3>
-        <p>If you do not want to use the recommended service, see <a href="other-services">other things you can do.</a></p>
+        <p>If you do not want to use the recommended service, see <a href="other-services7">other things you can do.</a></p>
+        <details class="nhsuk-details">
+          <summary class="nhsuk-details__summary">
+            <span class="nhsuk-details__summary-text">
+              Cost of NHS dental treatment
+            </span>
+          </summary>
+          <div class="nhsuk-details__text">
+            <p>NHS pricing bands are:<p>
+              <div class="band-text">
+                <p> Band 1 (including emergency) <span> £22.70 </span><br>
+                <small>Examination, diagnosis and advice.</small></p>
+                <hr>
+                <p> Band 2 <span> £62.10 </span><br>
+                <small> Additional minor treatment such as fillings, <br> root canal and removing teeth.</small></p>
+                <hr>
+                <p>Band 3 <span> £269.30 </span><br>
+                <small> Additional complex procedures, such as<br>crowns, dentures and bridges.</small></p>
+                <hr>
+              </div>
+              <p> Prices change every April </p>
+            </div>
+          </details>
         </div>
         <br>
         <hr>
