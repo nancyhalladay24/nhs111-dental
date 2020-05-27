@@ -129,7 +129,7 @@ border:1px solid #D8DDE0;
 .extraInformation{
   border-left:4px solid #D8DDE0;
   background:#F0F4F5;
-  padding: 15px 0px 1px 15px;
+  padding: 0px 0px 1px 15px;
   display:inline-grid;
   grid-column-start: 1;
   grid-area: information2;
@@ -143,19 +143,21 @@ border:1px solid #D8DDE0;
   background-color: #F0F4F5;
 }
 .moreInformationGrid{
-  padding: 15px 0px 1px 15px;
+  padding: 10px 0px 0px 15px;
   display:grid;
   grid-template-columns: [information] 40% [map] 60% [mapEnd];
   grid-template-rows: auto;
   grid-template-areas:
   "information3 mapOther";
+  margin:15px 15px 0px 0px;
 }
 .mapOther {
   display:inline-grid;
   grid-area: mapOther;
   grid-column-start: 2 / 3;
   margin-right:15px;
-  height:300px;
+  height: 275px;
+  border-left:4px solid white;
 }
 .address2{
   margin: 15px;
@@ -180,7 +182,7 @@ iframe {
   border-left:4px solid #D8DDE0;
   background:#F0F4F5;
   display:flex;
-  flex-direction:row;
+  flex-direction:column;
   justify-content: flex-start;
   margin-bottom:25px;
 }
@@ -260,6 +262,9 @@ flex-basis:55%;
 }
 
 /*FAQ*/
+.nhsuk-details {
+  background-color: transparent;
+}
 .nhsuk-details__text p {
   margin-bottom:10px;
 }
@@ -314,7 +319,7 @@ a.nhsuk-footer__list-item-link {
   }
 
   iframe{
-    height:300px;
+    height:auto;
   }
   .moreInformationGrid{
     padding: 15px 0px 1px 15px;
@@ -347,6 +352,9 @@ a.nhsuk-footer__list-item-link {
   .dosInformation .moreInformationGrid hr {
     margin-top:22px;
     margin-bottom:8px;
+  }
+  .distance{
+    padding-top:15px;
   }
 }
 
