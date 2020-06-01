@@ -98,7 +98,9 @@ border:1px solid #D8DDE0;
 }
 #aliasAddress {
   font-weight: bold;
-  margin-bottom:10px !important;
+}
+#recommendedServiceText{
+  max-width:650px;
 }
 
 /* grid layout */
@@ -116,16 +118,22 @@ border:1px solid #D8DDE0;
 .dosInformationGrid{
   border-left:4px solid #D8DDE0;
   background:#F0F4F5;
-  padding: 15px 0px 1px 15px;
+  padding: 20px 0px 1px 15px;
 }
 .addressNoMap hr{
   padding:0px;
-  margin-top:20px;
-  margin-bottom:20px;
+  margin-top:30px;
+  margin-bottom:30px;
   width:125px;
   border:1px solid #D8DDE0;
 }
-
+#headerHR{
+  padding:0px;
+  margin-top:20px;
+  margin-bottom:30px;
+  width:125px;
+  border:1px solid #D8DDE0;
+}
 #blueBold{
   color:#005EB8;
   font-weight: bold;
@@ -145,8 +153,8 @@ border:1px solid #D8DDE0;
 }
 .opening-times .nhsuk-details__summary {
   background-color: #F0F4F5 !important;
-  padding:0px !important;
   width:inherit;
+  padding:0px;
 }
 .openingTimeRow{
   display:flex;

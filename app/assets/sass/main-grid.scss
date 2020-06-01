@@ -35,10 +35,31 @@ div.before-you-continue-advice {
 body {
   background:white;
 }
+#headerHR{
+  padding:0px;
+  margin-top:20px;
+  margin-bottom:30px;
+  width:125px;
+  border:1px solid #D8DDE0;
+}
+#dentistHR{
+  padding:0px;
+  margin-top:10px;
+  margin-bottom:20px;
+  width:125px;
+  border:1px solid #D8DDE0;
+}
+#moreInfoHR{
+  padding:0px;
+  margin-top:5px;
+  margin-bottom:25px;
+  width:125px;
+  border:1px solid #D8DDE0;
+}
 hr {
 padding:0px;
-margin-top:30px;
-margin-bottom:30px;
+margin-top:40px;
+margin-bottom:40px;
 width:125px;
 border:1px solid #D8DDE0;
 }
@@ -49,11 +70,6 @@ border:1px solid #D8DDE0;
   margin-right:20px;
   width:auto;
   border:1px solid #D8DDE0;
-}
-#boilerplate{
-  padding-right:20px;
-  margin:0px !important;
-  font-size: 12pt !important;
 }
 /*action*/
 .timeframeBanner{
@@ -96,11 +112,12 @@ border:1px solid #D8DDE0;
 .website {
   line-height: 42px;
 }
-#aliasAddress {
+#aliasAddress{
   font-weight: bold;
-  margin-bottom:10px !important;
 }
-
+#recommendedServiceText{
+  max-width:650px;
+}
 /* grid layout */
 .dosDisplayGrid{
   margin-bottom:25px;
@@ -122,8 +139,8 @@ border:1px solid #D8DDE0;
 }
 .extraInformation hr {
   padding:0px;
-  margin-top:5px;
-  margin-bottom:15px;
+  margin-top:15px;
+  margin-bottom:20px;
   width:125px;
 }
 .extraInformation{
@@ -143,36 +160,35 @@ border:1px solid #D8DDE0;
   background-color: #F0F4F5;
 }
 .moreInformationGrid{
-  padding: 10px 0px 0px 15px;
+  padding: 10px 0px 0px 2px;
   display:grid;
   grid-template-columns: [information] 40% [map] 60% [mapEnd];
   grid-template-rows: auto;
   grid-template-areas:
   "information3 mapOther";
-  margin:15px 15px 0px 0px;
+  margin:15px 0px 0px 0px;
 }
 .mapOther {
   display:inline-grid;
   grid-area: mapOther;
   grid-column-start: 2 / 3;
   margin-right:15px;
-  height: 275px;
+  min-height: 275px;
   border-left:4px solid white;
 }
-.address2{
-  margin: 15px;
-  padding:15px;
+.information2{
   display:inline-grid;
   grid-area: information3;
   grid-column-start: 1/2;
 }
 
-.dosInformation .moreInformationGrid hr {
+.nhsuk-details .information2 hr {
   padding:0px;
   margin-top:30px;
   margin-bottom:17.5px;
   width:125px;
 }
+
 iframe {
   width:100%;
   height:100%;
@@ -187,7 +203,7 @@ iframe {
   margin-bottom:25px;
 }
 .dosInformation{
-  padding: 15px 0px 1px 15px;
+  padding: 20px 0px 1px 15px;
   display:flex;
   width:100%;
   flex-direction:column;
@@ -203,10 +219,11 @@ iframe {
   font-weight: bold;
   background-color: transparent;
 }
-/*Opening time content*/
-#open24{
-  margin-bottom:10px !important;
+#callbackExplainer{
+  max-width:500px;
+  color:#425462;
 }
+/*Opening time content*/
 .opening-times{
   width:100%;
 }
@@ -307,7 +324,7 @@ a.nhsuk-footer__list-item-link {
 @media screen and (max-width:700px) {
   .dosDisplayGrid{
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto 300px auto;
     grid-template-areas:
     "information1"
     "map"
@@ -319,10 +336,10 @@ a.nhsuk-footer__list-item-link {
   }
 
   iframe{
-    height:auto;
+    height:100%;
   }
   .moreInformationGrid{
-    padding: 15px 0px 1px 15px;
+    padding: 15px 0px 1px 0px;
     display:grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
@@ -334,10 +351,10 @@ a.nhsuk-footer__list-item-link {
     grid-row: 1 / 2;
     margin-left:0px;
     margin-bottom:15px;
+    border-bottom: solid 4px white;
+    border-left:0px;
   }
-  .address2{
-    margin: 15px;
-    padding:20px;
+  .information2{
     display:inline-grid;
     grid-area: information3;
     grid-row-start: 2 / 3;
