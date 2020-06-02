@@ -118,6 +118,9 @@ border:1px solid #D8DDE0;
 #recommendedServiceText{
   max-width:650px;
 }
+.distance{
+  padding-top:20px;
+}
 /* grid layout */
 .dosDisplayGrid{
   margin-bottom:25px;
@@ -139,7 +142,7 @@ border:1px solid #D8DDE0;
 }
 .extraInformation hr {
   padding:0px;
-  margin-top:15px;
+  margin-top:10px;
   margin-bottom:20px;
   width:125px;
 }
@@ -271,6 +274,7 @@ flex-basis:55%;
 }
 .opening-time-24{
   color:#005EB8;
+  padding-bottom:10px;
 }
 
 /*Navigation buttons*/
